@@ -15,6 +15,13 @@
             
             <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
             <form action="https://formsubmit.co/2fabf8fd802b68c520cc32496b9d2f45" method="POST">
+                
+                <!-- honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
                 <p>required information is marked with an asterisk (*)</p>
                 <label for ="firstName">First Name* <i class="fa fa-user"> :</i></label>
                 <input type="text" id="firstName" name="First Name" placeholder="Your Name" required>
