@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f75b4eb6a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Contact form <i class="fa-solid fa-address-book"> </i></legend>
+            
+            <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+            <form action="https://formsubmit.co/maik.joerger94@gmail.com" method="POST">
+                <p>required information is marked with an asterisk (*)</p>
+                <label for ="firstName">First Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="firstName" placeholder="Your Name" required>
+                <label for ="lastName">Last Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="lastName" placeholder="Your Name" required>
+                <label for ="email">Email* <i class="fa-regular fa-envelope"> :</i></label>
+                <input type="email" id="email" placeholder="Email id" required>
+                <label for ="phone">Phone* <i class="fa fa-phone"> :</i></label>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <label for ="message">Message* <i class="fa-regular fa-message"> :</i></label>
+                <textarea name="" id="message" rows="4" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+        </fieldset>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken : "301ed893-4168-4f46-b5a9-b5afe5ae9438",
+                // Host : "smtp.elasticemail.com",
+                // Username : "maik.joerger94@gmail.com",
+                // Password : "**********1815C",
+                To : "maik.joerger94@gmail.com",
+                From : document.getElementByID("email").value,
+                Subject : "New Message Via Contact Form",
+                Body : "First Name: " + document.getElementById("firstName").value
+                + "<br> Last Name: " + document.getElementById("lastName").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone no: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value        
+            }).then(
+            message => alert("Message was sent successfully.")
+            );
+        }
+    </script> -->
+</body>
+</html>
